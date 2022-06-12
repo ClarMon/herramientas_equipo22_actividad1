@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Actividad grupal: An&aacute;lisis tendencias en D3.js</title>
+    <link rel="stylesheet" type="text/css" href="Equipo22_ACTIVIDAD_1.css"/>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="Equipo22_ACTIVIDAD_1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+        //Obtiene el encabezado de la página
+        getEncabezado("Información referente a crimenes en España");
+
+        //Valores para gráfica 1
+        var idSeccion1 = "seccion1";
+        var idTitulo1 = "titulo1";
+        var tituloGrafica1 = "Gráfica 1: Infracciones penales por tráfico de drogas";
+        var subtituloGrafica1 = "Primer trimestre del 2012 a 2022";
+        var idGrafica1 = "grafica1";
+        var idComentario1 = "comentario1";
+        var encabezadoComentario1 = "¿En qué año se registró el mayor incremento de infracciones asociadas con el tráfico de drogas?";
+        var CuerpoComentario1 = "De acuerdo a lo mostrado en la gráfica se puede observar que fue en el año 2019, " + 
+                                "donde se presentó un mayor número de infracciones respecto al año 2018, con una diferencia de 640. " +
+                                "La gráfica también denota una visible reducción de infracciones en el primer trimestre del 2016 respecto " +
+                                "al resto de los años anteriores y posteriores. ";
+        var descDetalle1 = "Para más detalle has click sobre los puntos de la gráfica...";
+
+        //Crea la sección para la gráfica 1
+        d3.select("body")
+            .append("div")
+            .append("section")
+            .attr("id", idSeccion1);
+        //Llama a funciones para gráfica 1
+        getTituloGrafica(idTitulo1, tituloGrafica1, subtituloGrafica1);
+        getGrafica1(idGrafica1, idComentario1);
+        getFuenteGrafica(idGrafica1, "Ministerio del Interior, ", "www.epdata.es");
+        getDescGrafica(idComentario1, encabezadoComentario1, CuerpoComentario1, true, descDetalle1);
+    </script>
+</body>
+</html>

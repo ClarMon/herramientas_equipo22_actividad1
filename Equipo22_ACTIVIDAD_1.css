@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    color: #0098CD;
+}
+
+p {
+    font-size: 14;
+}
+
+text {
+    font-size: 12;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.ajustaMargen {
+    margin: 1;
+}
+
+.comentario {
+    padding: 5;
+    background-color: #ccf1ff;
+    text-align: justify;
+}
+
+.detalle {
+    padding: 5;
+    background-color: white;
+    text-align: justify;    
+    color: #2b506e;
+}
+
+.linea {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.punto:hover {
+    r: 6px;
+    filter: brightness(0.05);
+}
